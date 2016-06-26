@@ -2,11 +2,11 @@
 
 add_definitions(-DTARGET_AML)
 
-if(ENV{PROJECT} STREQUAL "WeTek_Play")
+if($ENV{PROJECT} STREQUAL "WeTek_Play")
   add_definitions(-DTARGET_WETEK_PLAY)
-elseif(ENV{PROJECT} STREQUAL "WeTek_Core")
+elseif($ENV{PROJECT} STREQUAL "WeTek_Core")
   add_definitions(-DTARGET_WETEK_CORE)
-elseif(ENV{PROJECT} STREQUAL "Odroid_C2")
+elseif($ENV{PROJECT} STREQUAL "Odroid_C2")
   add_definitions(-DTARGET_ODROID_C2)
 endif()
 
